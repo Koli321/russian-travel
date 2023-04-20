@@ -1,0 +1,30 @@
+.cover__title {
+  margin: 0 auto 32px;
+  padding: 0;
+  max-width: 560px;
+  text-align: center;
+  display: flex;
+  position: relative;
+  font-family: "Inter", "Arial ", sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 72px;
+  line-height: 76px;
+  z-index: 1;
+}
+
+/* Когда делаю больше, схлопывается, так что оставляю пока так */
+@media screen and (max-width: 768px) {
+  .cover__title {
+    max-width: 288px;
+    font-size: 32px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .cover__title {
+    margin-top: 33px;
+    margin-bottom: 16px;
+    line-height: 35px;
+  }
+}
