@@ -13,18 +13,10 @@
   z-index: 1;
 }
 
-/* Когда делаю больше, схлопывается, так что оставляю пока так */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .cover__title {
-    max-width: 288px;
+    max-width: 248px;
     font-size: 32px;
-  }
-}
-
-@media screen and (max-width: 425px) {
-  .cover__title {
-    margin-top: 33px;
-    margin-bottom: 16px;
-    line-height: 35px;
+    line-height: 1.1;
   }
 }
