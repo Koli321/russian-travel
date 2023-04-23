@@ -31,10 +31,11 @@
     row-gap: 0;
     margin-bottom: 50px;
   }
+}
 
 @media screen and (max-width: 320px) {
   .place{
     grid-template-columns: minmax(340px, 1fr);
   }
 }
-}
+
