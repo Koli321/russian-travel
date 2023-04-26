@@ -38,16 +38,8 @@
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .cover__background {
-  min-height: 480px;
-  }
-}
-
-
-@media screen and (max-width: 425px) {
-  .cover__background {
-  min-height: 200px;
-  justify-content: flex-start;
+    min-height: calc(200px + (280 + 280 * .7) * (100vw - 320px) / 767);
   }
 }

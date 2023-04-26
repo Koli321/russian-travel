@@ -15,8 +15,14 @@
 
 @media screen and (max-width: 767px) {
   .cover__title {
-    max-width: 248px;
-    font-size: 32px;
-    line-height: 1.1;
+    max-width: calc(248px + (432 + 432 * .7) * (100vw - 320px) / 767);
+    font-size: calc(32px + (40 + 40 * .7) * (100vw - 320px) / 767);
+    line-height: calc(35 / 32 * 100%);
+  }
+}
+
+@media  screen and (max-width: 320px) {
+  .cover__title{
+    margin-bottom: 0;
   }
 }

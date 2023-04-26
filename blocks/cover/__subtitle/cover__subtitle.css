@@ -12,10 +12,11 @@
   z-index: 1;
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 767px) {
   .cover__subtitle {
-    max-width: 288px;
-    font-size: 14px;
-    line-height: 16px;
+    padding-top: calc(16px + (16 + 16 * .7) * (100vw - 320px) / 767);
+    max-width: calc(288px + (72 + 72 * .7) * (100vw - 320px) / 767);
+    font-size: calc(14px + (4 + 4 * .7) * (100vw - 320px) / 767);
+    line-height: calc(16 / 14 * 100%);
   }
 }
