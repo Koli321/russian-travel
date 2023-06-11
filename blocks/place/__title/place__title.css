@@ -1,27 +1,24 @@
 .place__title {
-  margin: 0;
-  padding: 0;
-  font-family: "Inter", "Arial ", sans-serif;
+  max-width: 457px;
   font-weight: 900;
-  font-style: normal;
   font-size: 72px;
-  line-height: 76px;
-  display: flex;
-  flex-direction: column;
+  line-height: 65px;
+  grid-area: title;
+  margin: 0;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 950px) {
   .place__title {
     font-size: 42px;
     line-height: 46px;
+    padding-right: 10px ;
   }
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 680px) {
   .place__title {
-    margin: 0 auto 33px;
     font-size: 32px;
     line-height: 35px;
-    width: calc(100% - 2*16px);
+    margin: 0 16px 8px;
   }
 }

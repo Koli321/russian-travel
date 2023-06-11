@@ -1,45 +1,60 @@
 .cover__background {
-  margin: 0 auto;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background-image: url(../../../img/train-station.jpg);
-  background-size: cover;
-  background-position: center;
-  color: #fff;
-  text-decoration: none;
-  position: relative;
-  width: 100%;
-  max-width: 1184px;
-  min-height: 740px;
-}
+    text-decoration: none;
+    background-image: url(../../../img/train-station.jpg);
+    width: 100%;
+    min-height: 62.5vw;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    object-fit: cover;
+    box-sizing: border-box;
+   
+   }
+   
+   .cover__background::before {
+    background-color: #2A2C2F;
+    opacity: 0.3;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+   
+   }
+   
+   .cover__background:hover::before {
+    opacity: 0.8;
+   }
+   
+   @media screen and (min-width: 1280px) {
+    .cover__background {
+    min-height: 740px;
+    margin-bottom: 92px;
+    margin-top: 92px;
+     }
+   }
 
-.cover__background::before {
-  content: '';
-  display: block;
-  background-color: #2A2C2F;
-  opacity: 0.3;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  transition: 1.5s ease-in;
-}
+   @media screen and (min-width: 1024px) {
+    .cover__background {
+    margin-bottom: 92px;
+    margin-top: 92px;
+     }
+   }
 
-.cover__background:hover::before {
-  opacity: 0.8;
-}
+   @media screen and (min-width: 760px) {
+    .cover__background {
+    margin-bottom: 88px;
+    margin-top: 90px;
+     }
+   }
 
-@media screen and (max-width: 1024px) {
-  .cover__background {
-  min-height: 640px;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .cover__background {
-    min-height: calc(200px + (280 + 280 * .7) * (100vw - 320px) / 767);
-  }
-}
+   @media screen and (min-width: 320px) {
+    .cover__background {
+    margin-bottom: 64px;
+    margin-top: 66px;
+     }
+   }
